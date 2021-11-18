@@ -6,5 +6,5 @@
 **Argumenter:**
 - [] betyder argumentet er valgfrit.
 - "." og "-" kan erstattes med alt.
-- . (DOT) x markerer værdien af et kort signal.
-- - (DASH) x markerer værdien af et langt signal.
+- **.** (DOT) markerer værdien af et kort signal.
+- **-** (DASH) markerer værdien af et langt signal.
