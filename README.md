@@ -9,6 +9,6 @@
 - **.** (DOT) markerer værdien af et kort signal.
 - **-** (DASH) markerer værdien af et langt signal.
 
-f.eks: `java -jar MorseTranslator.jar ( )`
+Eksempel: `java -jar MorseTranslator.jar ( )`
 
 Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `Morse Translator.jar`.
