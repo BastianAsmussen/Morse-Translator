@@ -6,7 +6,7 @@
 
 <hr>
 <b>Arguments:</b>
-<b>`[] means optional.`
+<br>`[] means optional.`
 <br>"." and "-" can be replaced with anything.
 <br>. (DOT) marks the value for a short signal.
 <br>- (DASH) marks the value for a long signal.
