@@ -2,7 +2,6 @@
 
 ## Information
 **Terminal Kommando:** `java -jar MorseTranslator.jar [. -]`
-<hr>
 
 **Argumenter:**
 - [] betyder argumentet er valgfrit.
