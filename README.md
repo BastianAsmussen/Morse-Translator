@@ -1,7 +1,7 @@
 # Morsekode oversætter
 
 ## Information
-**Terminal Kommando:** `java -jar MorseTranslator.jar [. -]`
+**Kommando:** `java -jar MorseTranslator.jar [. -]`
 
 **Argumenter:**
 - **[]** betyder argumentet er valgfrit.
