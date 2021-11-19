@@ -13,6 +13,7 @@ public class Morse {
         HashMap<String, String> morseTable = new HashMap<>();
 
         // Generer bugstaver, tal og andre tegn med tilsvarende morse kode.
+        
         // Bugstaver:
         morseTable.put("A", dot + dash);
         morseTable.put("B", dash + dot + dot + dot);
