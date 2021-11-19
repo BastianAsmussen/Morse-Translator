@@ -9,10 +9,11 @@ public class Morse {
 
     public static HashMap<String, String> generateTable(String dot, String dash) {
 
-        // Morse kode bordet bliver lavet i et hashmap siden de har O(1).
+        // Morse kode bordet bliver lavet i et hashmap siden de har O(n).
         HashMap<String, String> morseTable = new HashMap<>();
 
         // Generer bugstaver, tal og andre tegn med tilsvarende morse kode.
+
         // Bugstaver:
         morseTable.put("A", dot + dash);
         morseTable.put("B", dash + dot + dot + dot);
@@ -81,8 +82,6 @@ public class Morse {
 
     public static String toMorse(String input, HashMap morseTable) {
 
-        long ping = System.currentTimeMillis();
-
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
 
@@ -97,26 +96,20 @@ public class Morse {
 
         output.deleteCharAt(output.length() - 1);
 
-        System.out.println(System.currentTimeMillis() - ping + "ms");
-
         return output.toString().replaceAll("null", "?");
     }
 
     public static String fromMorse(String input, HashMap morseTable) {
-
-        long ping = System.currentTimeMillis();
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
 
         Map reversedMorseTable = MapUtils.invertMap(morseTable);
 
-        for (String currentValue : inputSplit) {
+        for(String currentValue : inputSplit) {
 
             output.append(reversedMorseTable.get(currentValue));
         }
-
-        System.out.println(System.currentTimeMillis() - ping + "ms");
 
         return output.toString().replaceAll("null", "?").toLowerCase();
     }
