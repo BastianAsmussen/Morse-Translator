@@ -36,4 +36,4 @@ $ java -jar MorseTranslator.jar
 ```  
 <hr>
 
-Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `Morse Translator.jar`.
+Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
