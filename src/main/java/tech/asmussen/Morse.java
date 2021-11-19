@@ -41,8 +41,7 @@ public class Morse {
         morseTable.put("X", dash + dot + dot + dash);
         morseTable.put("Y", dash + dot + dash + dash);
         morseTable.put("Z", dash + dash + dot + dot);
-        morseTable.put("", dot);
-
+        
         // Tal:
         morseTable.put("0", dash + dash + dash + dash + dash);
         morseTable.put("1", dot + dash + dash + dash + dash);
