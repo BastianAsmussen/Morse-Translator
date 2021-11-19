@@ -15,6 +15,7 @@ $ java -jar MorseTranslator.jar
 > Indsæt hvad du vil oversætte til morse: test
 > - . ... -
 
+Fra morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): fra
 > Indsæt hvad du vil oversætte fra morse: - . ... -
@@ -29,11 +30,30 @@ $ java -jar MorseTranslator.jar ( )
 > Indsæt hvad du vil oversætte til morse: test
 > ) ( ((( )
 
+Fra morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): fra
 > Indsæt hvad du vil oversætte fra morse: ) ( ((( )
 > test
 ```  
-<hr>
+<hr>  
 
+### Tutorial:
+**Windows:**  
+```
+1) Download jar filen med linket under.
+2) Åben kommandopromten.
+3) Skriv "cd (hvor jar filen ligger)".
+4) Skriv "java -jar MorseTranslator.jar"
+```  
+
+**Arch Linux:**  
+```
+1) Åben terminalen.
+2) Skriv "sudo pacman -S git".
+3) Skriv "git clone https://github.com/BastianAsmussen/Morse-Translator".
+4) Skriv "cd Morse-Translator".
+5) Skriv "java -jar MorseTranslator.jar".
+```
+<hr>  
 Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
