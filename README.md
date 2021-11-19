@@ -5,6 +5,8 @@ Kommandoen kan tage 2 inputs: DOT og DASH. De to inputs bliver brugt når progra
 Man kan f.eks bruge `java -jar MorseTranslator.jar . -` og så vil **DOT** blive sat til **.** og **DASH** sat til **-**.  
 Hvis ingen inputs er specificeret vælger den automatisk `. -` som inputs.  
 
+Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
+
 <hr>  
 
 **Eksempler (standard inputs):**  
@@ -56,5 +58,3 @@ $ java -jar MorseTranslator.jar
 5) Skriv "java -jar MorseTranslator.jar".
 ```
 <hr>  
-
-<b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade </b>`MorseTranslator.jar`<b>.</b>
