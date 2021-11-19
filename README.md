@@ -14,7 +14,7 @@ Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/Morse
 
 <hr>  
 
-### Ekesmpler:
+### Eksempler:
 
 **Eksempler (standard inputs):**  
 ```
