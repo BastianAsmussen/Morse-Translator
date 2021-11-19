@@ -56,4 +56,5 @@ $ java -jar MorseTranslator.jar
 5) Skriv "java -jar MorseTranslator.jar".
 ```
 <hr>  
-Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
+
+<b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade </b>`MorseTranslator.jar`<b>.</b>
