@@ -13,7 +13,6 @@ public class Morse {
         HashMap<String, String> morseTable = new HashMap<>();
 
         // Generer bugstaver, tal og andre tegn med tilsvarende morse kode.
-        
         // Bugstaver:
         morseTable.put("A", dot + dash);
         morseTable.put("B", dash + dot + dot + dot);
@@ -41,6 +40,7 @@ public class Morse {
         morseTable.put("X", dash + dot + dot + dash);
         morseTable.put("Y", dash + dot + dash + dash);
         morseTable.put("Z", dash + dash + dot + dot);
+        morseTable.put("", dot);
 
         // Tal:
         morseTable.put("0", dash + dash + dash + dash + dash);
@@ -81,6 +81,8 @@ public class Morse {
 
     public static String toMorse(String input, HashMap morseTable) {
 
+        long ping = System.currentTimeMillis();
+
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
 
@@ -95,10 +97,14 @@ public class Morse {
 
         output.deleteCharAt(output.length() - 1);
 
+        System.out.println(System.currentTimeMillis() - ping + "ms");
+
         return output.toString().replaceAll("null", "?");
     }
 
     public static String fromMorse(String input, HashMap morseTable) {
+
+        long ping = System.currentTimeMillis();
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
@@ -109,6 +115,8 @@ public class Morse {
 
             output.append(reversedMorseTable.get(currentValue));
         }
+
+        System.out.println(System.currentTimeMillis() - ping + "ms");
 
         return output.toString().replaceAll("null", "?").toLowerCase();
     }
