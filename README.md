@@ -1,9 +1,11 @@
 # Morsekode oversætter
 
 ## Table of contents
-1. [Information](#information)
-2. [Eksempler](#eksempler)
-3. [Tutorials](#tutorials)
+- [Information](#information)  
+- [Eksempler](#eksempler)  
+  - [Eksempler med standard inputs](#eksempler-standard-inputs)  
+  - [Eksempler med brugerdefinerede inputs](#eksempler-brugerdefinerede-inputs)
+- [Tutorials](#tutorials)  
 
 ### Information:
 Kommandoen kan tage 2 inputs: DOT og DASH. De to inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
