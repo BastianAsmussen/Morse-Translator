@@ -1,6 +1,6 @@
 # Morsekode oversætter
 
-## Table of contents
+### Indholdsfortegnelse
 - [Information](#information)  
 - [Eksempler](#eksempler)  
   - [Eksempler med standard inputs](#eksempler-standard-inputs)  
