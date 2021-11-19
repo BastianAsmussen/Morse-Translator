@@ -18,7 +18,7 @@ Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/Morse
 
 ### Eksempler:
 
-#### Eksempler (standard inputs):  
+#### Eksempler (standard input):  
 ```
 Til morsekode:
 $ java -jar MorseTranslator.jar
@@ -33,7 +33,7 @@ $ java -jar MorseTranslator.jar
 > test
 ```
 
-#### Eksempler (brugerdefinerede inputs):  
+#### Eksempler (brugerdefinerede input):  
 ```
 Til morsekode:
 $ java -jar MorseTranslator.jar ( )
