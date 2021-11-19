@@ -40,7 +40,7 @@ $ java -jar MorseTranslator.jar
 ```  
 <hr>  
 
-### Tutorial:
+### Tutorials:
 **Windows:**  
 ```
 1) Download jar filen med linket under.
