@@ -1,5 +1,10 @@
 # Morsekode oversætter
 
+## Table of contents
+1. [Information](#information)
+2. [Eksempler](#eksempler)
+3. [Tutorials](#tutorials)
+
 ### Information:
 Kommandoen kan tage 2 inputs: DOT og DASH. De to inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
 Man kan f.eks bruge `java -jar MorseTranslator.jar . -` og så vil **DOT** blive sat til **.** og **DASH** sat til **-**.  
@@ -8,6 +13,8 @@ Hvis ingen inputs er specificeret vælger den automatisk `. -` som inputs.
 Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
 
 <hr>  
+
+### Ekesmpler:
 
 **Eksempler (standard inputs):**  
 ```
