@@ -3,8 +3,8 @@
 ### Indholdsfortegnelse:
 - [Information](#information)  
 - [Eksempler](#eksempler)  
-  - [Eksempler med standard inputs](#eksempler-standard-inputs)  
-  - [Eksempler med brugerdefinerede inputs](#eksempler-brugerdefinerede-inputs)
+  - [Eksempler med standard input](#eksempler-standard-input)  
+  - [Eksempler med brugerdefinerede input](#eksempler-brugerdefinerede-input)
 - [Tutorials](#tutorials)  
 
 ### Information:
