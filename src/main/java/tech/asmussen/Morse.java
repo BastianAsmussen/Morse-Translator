@@ -1,4 +1,4 @@
-package tech.asmussen;
+package tech.asmussen.translator.morse;
 
 import java.util.HashMap;
 import java.util.Map;
