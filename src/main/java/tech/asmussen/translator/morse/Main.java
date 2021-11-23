@@ -16,7 +16,7 @@ public class Main {
             dash = args[1];
         }
 
-        HashMap morseTable = Morse.generateTable(dot, dash);
+        HashMap<String, String> morseTable = Morse.generateTable(dot, dash);
 
         Scanner userReader = new Scanner(System.in);
         String input = "";

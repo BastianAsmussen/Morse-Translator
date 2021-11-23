@@ -79,7 +79,7 @@ public class Morse {
         return morseTable;
     }
 
-    public static String toMorse(String input, HashMap morseTable) {
+    public static String toMorse(String input, HashMap<String, String> morseTable) {
 
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
@@ -98,12 +98,12 @@ public class Morse {
         return output.toString().replaceAll("null", "?");
     }
 
-    public static String fromMorse(String input, HashMap morseTable) {
+    public static String fromMorse(String input, HashMap<String, String> morseTable) {
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
 
-        Map reversedMorseTable = MapUtils.invertMap(morseTable);
+        Map<String, String> reversedMorseTable = MapUtils.invertMap(morseTable);
 
         for(String currentValue : inputSplit) {
 
