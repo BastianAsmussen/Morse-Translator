@@ -8,6 +8,9 @@
 └─ [Tutorials](#tutorials)  
 
 ### Information:
+Java version: 17
+Big O notation: O(1)
+
 Kommandoen kan tage 2 inputs: DOT og DASH. De to inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
 Man kan f.eks bruge `java -jar MorseTranslator.jar . -` og så vil **DOT** blive sat til **.** og **DASH** sat til **-**.  
 Hvis ingen inputs er specificeret vælger den automatisk `. -` som inputs.  
