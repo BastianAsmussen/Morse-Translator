@@ -15,7 +15,7 @@ Kommandoen kan tage 3 inputs: DOT, DASH og SPLIT. De tre inputs bliver brugt nå
 Man kan f.eks bruge `java -jar MorseTranslator.jar . - /` og så vil **DOT** blive sat til **.**, **DASH** sat til **-** og **SPLIT** vil blive sat til **/**.  
 Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.  
 
-<b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.</b>
+<b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/blob/bdd637b23670c05b4e74249d1a8f20569c769f24/out/artifacts/Morse_Translator_jar/Morse%20Translator.jar?raw=true" >her</a> for at downloade `MorseTranslator.jar`.</b>
 
 <hr>  
 
