@@ -8,8 +8,8 @@
 └─ [Tutorials](#tutorials)  
 
 ### Information:
-Java version: 17
-Big O notation: O(1)
+Java version: 17  
+Big O notation: O(n)  
 
 Kommandoen kan tage 3 inputs: DOT, DASH og SPLIT. De tre inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
 Man kan f.eks bruge `java -jar MorseTranslator.jar . - /` og så vil **DOT** blive sat til **.**, **DASH** sat til **-** og **SPLIT** vil blive sat til **/**.  
