@@ -26,14 +26,14 @@ Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.
 Til morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): til
-> Indsæt hvad du vil oversætte til morse: test
-> - . ... -
+> Indsæt hvad du vil oversætte til morse: test test
+> - . ... - / - . ... -
 
 Fra morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): fra
-> Indsæt hvad du vil oversætte fra morse: - . ... -
-> test
+> Indsæt hvad du vil oversætte fra morse: - . ... - / - . ... -
+> test test
 ```
 
 #### Eksempler (brugerdefinerede input):  
