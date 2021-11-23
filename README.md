@@ -5,15 +5,15 @@
 ├─ [Eksempler](#eksempler)  
 ├─── [Eksempler med standard input](#eksempler-standard-input)  
 ├─── [Eksempler med brugerdefinerede input](#eksempler-brugerdefinerede-input)  
-└─ [Tutorials](#tutorials)  
+└─ [Tutorials](#tutorials)
 
 ### Information:
 Java version: 17  
-Big O notation: O(1)  
+Big O notation: O(1)
 
 Kommandoen kan tage 3 inputs: DOT, DASH og SPLIT. De tre inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
 Man kan f.eks bruge `java -jar MorseTranslator.jar . - /` og så vil **DOT** blive sat til **.**, **DASH** sat til **-** og **SPLIT** vil blive sat til **/**.  
-Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.  
+Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.
 
 <b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/out/artifacts/MorseTranslator_jar/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.</b>
 
@@ -21,7 +21,7 @@ Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.
 
 ### Eksempler:
 
-#### Eksempler (standard input):  
+#### Eksempler (standard input):
 ```
 Til morsekode:
 $ java -jar MorseTranslator.jar
@@ -36,7 +36,7 @@ $ java -jar MorseTranslator.jar
 > test test
 ```
 
-#### Eksempler (brugerdefinerede input):  
+#### Eksempler (brugerdefinerede input):
 ```
 Til morsekode:
 $ java -jar MorseTranslator.jar ( ) /
@@ -53,7 +53,7 @@ $ java -jar MorseTranslator.jar ( ) /
 <hr>  
 
 ### Tutorials:
-**Windows:**  
+**Windows:**
 ```
 1) Download jar filen med linket under.
 2) Åben kommandopromten.
@@ -61,7 +61,7 @@ $ java -jar MorseTranslator.jar ( ) /
 4) Skriv "java -jar MorseTranslator.jar"
 ```  
 
-**Arch Linux:**  
+**Arch Linux:**
 ```
 1) Åben terminalen.
 2) Skriv "sudo pacman -S git".

@@ -34,22 +34,14 @@ public class Main {
             System.out.print("Indsæt hvad du vil oversætte til morse: ");
             input = userReader.nextLine();
 
-            long startTime = System.currentTimeMillis();
-
-            System.out.println(Morse.toMorse(input, morseTable, split));
-
-            System.out.println("Tid: " + (System.currentTimeMillis() - startTime) + "ms");
+            System.out.println(Morse.toMorse(input, split, morseTable));
 
         } else if(input.equalsIgnoreCase("fra")) {
 
             System.out.print("Indsæt hvad du vil oversætte fra morse: ");
             input = userReader.nextLine();
 
-            long startTime = System.currentTimeMillis();
-
-            System.out.println(Morse.fromMorse(input, morseTable, split));
-
-            System.out.println("Tid: " + (System.currentTimeMillis() - startTime) + "ms");
+            System.out.println(Morse.fromMorse(input, split, morseTable));
         }
     }
 }

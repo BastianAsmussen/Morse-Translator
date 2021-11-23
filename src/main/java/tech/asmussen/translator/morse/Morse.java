@@ -79,7 +79,7 @@ public class Morse {
         return morseTable;
     }
 
-    public static String toMorse(String input, HashMap<String, String> morseTable, String split) {
+    public static String toMorse(String input, String split, HashMap<String, String> morseTable) {
 
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
@@ -102,7 +102,7 @@ public class Morse {
         return output.toString().replaceAll("null", "?");
     }
 
-    public static String fromMorse(String input, HashMap<String, String> morseTable, String split) {
+    public static String fromMorse(String input, String split, HashMap<String, String> morseTable) {
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
