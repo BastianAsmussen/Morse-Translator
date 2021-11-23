@@ -9,11 +9,13 @@ public class Main {
 
         String dot = ".";
         String dash = "-";
+        String split = "/";
 
-        if(args.length > 0) {
+        if(args.length > 1) {
 
             dot = args[0];
             dash = args[1];
+            split = args[2];
         }
 
         HashMap<String, String> morseTable = Morse.generateTable(dot, dash);
@@ -32,14 +34,22 @@ public class Main {
             System.out.print("Indsæt hvad du vil oversætte til morse: ");
             input = userReader.nextLine();
 
-            System.out.println(Morse.toMorse(input, morseTable));
+            long startTime = System.currentTimeMillis();
+
+            System.out.println(Morse.toMorse(input, morseTable, split));
+
+            System.out.println("Tid: " + (System.currentTimeMillis() - startTime) + "ms");
 
         } else if(input.equalsIgnoreCase("fra")) {
 
             System.out.print("Indsæt hvad du vil oversætte fra morse: ");
             input = userReader.nextLine();
 
-            System.out.println(Morse.fromMorse(input, morseTable));
+            long startTime = System.currentTimeMillis();
+
+            System.out.println(Morse.fromMorse(input, morseTable, split));
+
+            System.out.println("Tid: " + (System.currentTimeMillis() - startTime) + "ms");
         }
     }
 }

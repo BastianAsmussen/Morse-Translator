@@ -79,7 +79,7 @@ public class Morse {
         return morseTable;
     }
 
-    public static String toMorse(String input, HashMap<String, String> morseTable) {
+    public static String toMorse(String input, HashMap<String, String> morseTable, String split) {
 
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
@@ -90,6 +90,10 @@ public class Morse {
 
                 String currentValue = String.valueOf(Character.toUpperCase(c));
                 output.append(morseTable.get(currentValue)).append(" ");
+
+            } else {
+
+                output.append(split).append(" ");
             }
         }
 
@@ -98,7 +102,7 @@ public class Morse {
         return output.toString().replaceAll("null", "?");
     }
 
-    public static String fromMorse(String input, HashMap<String, String> morseTable) {
+    public static String fromMorse(String input, HashMap<String, String> morseTable, String split) {
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
@@ -107,7 +111,14 @@ public class Morse {
 
         for(String currentValue : inputSplit) {
 
-            output.append(reversedMorseTable.get(currentValue));
+            if(!currentValue.equalsIgnoreCase(split)) {
+
+                output.append(reversedMorseTable.get(currentValue));
+
+            } else {
+
+                output.append(" ");
+            }
         }
 
         return output.toString().replaceAll("null", "?").toLowerCase();
