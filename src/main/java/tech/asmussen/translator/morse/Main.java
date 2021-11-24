@@ -25,7 +25,7 @@ public class Main {
 
         while(!input.equalsIgnoreCase("til") && !input.equalsIgnoreCase("fra")) {
 
-            System.out.print("Vil du oversætte fra eller til morse? (til/fra): ");
+            System.out.print("Vil du oversætte til eller fra morse? (til/fra): ");
             input = userReader.nextLine();
         }
 
