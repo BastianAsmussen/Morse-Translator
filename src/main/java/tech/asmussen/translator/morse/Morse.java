@@ -1,9 +1,10 @@
 package tech.asmussen.translator.morse;
 
+import org.apache.commons.collections4.MapUtils;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.commons.collections4.MapUtils;
 
 public class Morse {
 
@@ -99,9 +100,10 @@ public class Morse {
 
         output.deleteCharAt(output.length() - 1);
 
-        return output.toString().replaceAll("null", "?");
+        return output.toString().replaceAll("null", "[ERROR]");
     }
 
+    @NotNull
     public static String fromMorse(String input, String split, HashMap<String, String> morseTable) {
 
         String[] inputSplit = input.split(" ");
@@ -121,6 +123,6 @@ public class Morse {
             }
         }
 
-        return output.toString().replaceAll("null", "?").toLowerCase();
+        return output.toString().replaceAll("null", "[ERROR]").toLowerCase();
     }
 }
