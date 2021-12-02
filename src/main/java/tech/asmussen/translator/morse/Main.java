@@ -49,16 +49,5 @@ public class Main {
 
             System.out.println(Morse.fromMorse(input, split, morseTable));
         }
-
-        double currentTime = (System.nanoTime() - startTime) / 1_000_000d;
-
-        String[] timeArray = String.valueOf(currentTime).split("[.]");
-
-        long nanoseconds = Integer.parseInt(timeArray[1]);
-        long milliseconds = Integer.parseInt(timeArray[0]);
-        long seconds = milliseconds / 1_000;
-        long minutes = seconds / 60;
-
-        System.out.printf("\nTid: %s minut(ter), %s sekund(er), %s millisekund(er) og %s nanosekund(er).", minutes, seconds, milliseconds, nanoseconds);
     }
 }
