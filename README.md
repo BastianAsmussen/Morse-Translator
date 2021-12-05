@@ -1,51 +1,48 @@
 # Morsekode oversætter
 
 ### Indholdsfortegnelse:
-┌─ [Information](#information)  
-├─ [Eksempler](#eksempler)  
-├─── [Eksempler med standard input](#eksempler-standard-input)  
-├─── [Eksempler med brugerdefinerede input](#eksempler-brugerdefinerede-input)  
-└─ [Tutorials](#tutorials)
+- [Information](#information)  
+- [Eksempler](#eksempler)  
+  - [Eksempler med standard input](#eksempler-standard-input)  
+  - [Eksempler med brugerdefinerede input](#eksempler-brugerdefinerede-input)
+- [Tutorials](#tutorials)  
 
 ### Information:
-Java version: 17  
-Big O notation: O(1)
+Kommandoen kan tage 2 inputs: DOT og DASH. De to inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
+Man kan f.eks bruge `java -jar MorseTranslator.jar . -` og så vil **DOT** blive sat til **.** og **DASH** sat til **-**.  
+Hvis ingen inputs er specificeret vælger den automatisk `. -` som inputs.  
 
-Kommandoen kan tage 3 inputs: DOT, DASH og SPLIT. De tre inputs bliver brugt når programmet sender svaret tilbage på dens oversættelse.  
-Man kan f.eks bruge `java -jar MorseTranslator.jar . - /` og så vil **DOT** blive sat til **.**, **DASH** sat til **-** og **SPLIT** vil blive sat til **/**.  
-Hvis ingen inputs er specificeret vælger den automatisk `. - /` som inputs.
-
-<b>Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/out/artifacts/MorseTranslator_jar/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.</b>
+Klik <a href="https://github.com/BastianAsmussen/Morse-Translator/raw/main/MorseTranslator.jar" >her</a> for at downloade `MorseTranslator.jar`.
 
 <hr>  
 
 ### Eksempler:
 
-#### Eksempler (standard input):
+#### Eksempler (standard input):  
 ```
 Til morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): til
-> Indsæt hvad du vil oversætte til morse: test test
-> - . ... - / - . ... -
+> Indsæt hvad du vil oversætte til morse: test
+> - . ... -
 
 Fra morsekode:
 $ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): fra
-> Indsæt hvad du vil oversætte fra morse: - . ... - / - . ... -
-> test test
+> Indsæt hvad du vil oversætte fra morse: - . ... -
+> test
 ```
 
-#### Eksempler (brugerdefinerede input):
+#### Eksempler (brugerdefinerede input):  
 ```
 Til morsekode:
-$ java -jar MorseTranslator.jar ( ) /
+$ java -jar MorseTranslator.jar ( )
 > Vil du oversætte fra eller til morse? (til/fra): til
 > Indsæt hvad du vil oversætte til morse: test
 > ) ( ((( )
 
 Fra morsekode:
-$ java -jar MorseTranslator.jar ( ) /
+$ java -jar MorseTranslator.jar
 > Vil du oversætte fra eller til morse? (til/fra): fra
 > Indsæt hvad du vil oversætte fra morse: ) ( ((( )
 > test
@@ -53,7 +50,7 @@ $ java -jar MorseTranslator.jar ( ) /
 <hr>  
 
 ### Tutorials:
-**Windows:**
+**Windows:**  
 ```
 1) Download jar filen med linket under.
 2) Åben kommandopromten.
@@ -61,7 +58,7 @@ $ java -jar MorseTranslator.jar ( ) /
 4) Skriv "java -jar MorseTranslator.jar"
 ```  
 
-**Arch Linux:**
+**Arch Linux:**  
 ```
 1) Åben terminalen.
 2) Skriv "sudo pacman -S git".

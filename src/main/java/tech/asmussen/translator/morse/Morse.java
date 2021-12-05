@@ -1,10 +1,9 @@
 package tech.asmussen.translator.morse;
 
-import org.apache.commons.collections4.MapUtils;
-import org.jetbrains.annotations.NotNull;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.commons.collections4.MapUtils;
 
 public class Morse {
 
@@ -71,16 +70,13 @@ public class Morse {
         morseTable.put("+", dot + dash + dot + dash + dot);
         morseTable.put("-", dash + dot + dot + dot + dot + dash);
         morseTable.put("_", dot + dot + dash + dash + dot + dash);
-        morseTable.put("\"", dot + dash + dot + dot + dash + dot);
         morseTable.put("$", dot + dot + dot + dash + dot + dot + dash);
         morseTable.put("@", dot + dash + dash + dot + dash + dot);
-        morseTable.put("¿", dot + dot + dash + dot + dash);
-        morseTable.put("¡", dash + dash + dot + dot + dot + dash);
 
         return morseTable;
     }
 
-    public static String toMorse(String input, String split, HashMap<String, String> morseTable) {
+    public static String toMorse(String input, HashMap<String, String> morseTable) {
 
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
@@ -91,38 +87,25 @@ public class Morse {
 
                 String currentValue = String.valueOf(Character.toUpperCase(c));
                 output.append(morseTable.get(currentValue)).append(" ");
-
-            } else {
-
-                output.append(split).append(" ");
             }
         }
 
-        output.deleteCharAt(output.length() - 1);
+        output = new StringBuilder(output.toString().trim());
 
-        return output.toString().replaceAll("null", "[ERROR]");
+        return output.toString().replaceAll("null", "");
     }
 
-    @NotNull
-    public static String fromMorse(String input, String split, HashMap<String, String> morseTable) {
+    public static String fromMorse(String input, HashMap<String, String> morseTable) {
 
         String[] inputSplit = input.split(" ");
         StringBuilder output = new StringBuilder();
-
         Map<String, String> reversedMorseTable = MapUtils.invertMap(morseTable);
 
         for(String currentValue : inputSplit) {
 
-            if(!currentValue.equalsIgnoreCase(split)) {
-
-                output.append(reversedMorseTable.get(currentValue));
-
-            } else {
-
-                output.append(" ");
-            }
+            output.append(reversedMorseTable.get(currentValue));
         }
 
-        return output.toString().replaceAll("null", "[ERROR]").toLowerCase();
+        return output.toString().replaceAll("null", "").toLowerCase();
     }
 }
