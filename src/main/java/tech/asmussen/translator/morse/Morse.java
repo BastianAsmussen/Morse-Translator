@@ -92,7 +92,7 @@ public class Morse {
 
         output = new StringBuilder(output.toString().trim());
 
-        return output.toString().replaceAll("null", "");
+        return output.toString().replaceAll("null", "?");
     }
 
     public static String fromMorse(String input, HashMap<String, String> morseTable) {
@@ -106,6 +106,6 @@ public class Morse {
             output.append(reversedMorseTable.get(currentValue));
         }
 
-        return output.toString().replaceAll("null", "").toLowerCase();
+        return output.toString().replaceAll("null", "?").toLowerCase();
     }
 }
