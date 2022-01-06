@@ -19,27 +19,31 @@ public class Main {
         HashMap<String, String> morseTable = Morse.generateTable(dot, dash);
 
         Scanner userReader = new Scanner(System.in);
-        String input = "";
+        
+        while (true) {
+            
+            String input = "";
+        
+            while (!input.equalsIgnoreCase("til") && !input.equalsIgnoreCase("fra")) {
 
-        while (!input.equalsIgnoreCase("til") && !input.equalsIgnoreCase("fra")) {
+                System.out.print("Vil du oversætte til eller fra morse? (til/fra): ");
+                input = userReader.nextLine();
+            }
 
-            System.out.print("Vil du oversætte til eller fra morse? (til/fra): ");
-            input = userReader.nextLine();
-        }
+            if (input.equalsIgnoreCase("til")) {
 
-        if (input.equalsIgnoreCase("til")) {
+                System.out.print("Indsæt hvad du vil oversætte til morse: ");
+                input = userReader.nextLine();
 
-            System.out.print("Indsæt hvad du vil oversætte til morse: ");
-            input = userReader.nextLine();
+                System.out.println(Morse.toMorse(input, morseTable));
 
-            System.out.println(Morse.toMorse(input, morseTable));
+            } else if (input.equalsIgnoreCase("fra")) {
 
-        } else if (input.equalsIgnoreCase("fra")) {
+                System.out.print("Indsæt hvad du vil oversætte fra morse: ");
+                input = userReader.nextLine();
 
-            System.out.print("Indsæt hvad du vil oversætte fra morse: ");
-            input = userReader.nextLine();
-
-            System.out.println(Morse.fromMorse(input, morseTable));
+                System.out.println(Morse.fromMorse(input, morseTable));
+            }
         }
     }
 }
