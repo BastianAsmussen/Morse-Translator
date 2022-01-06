@@ -10,7 +10,7 @@ public class Main {
         String dot = ".";
         String dash = "-";
 
-        if(args.length > 0) {
+        if (args.length > 0) {
 
             dot = args[0];
             dash = args[1];
