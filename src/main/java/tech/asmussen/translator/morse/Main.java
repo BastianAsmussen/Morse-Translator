@@ -37,7 +37,7 @@ public class Main {
 
                 System.out.println(Morse.toMorse(input, morseTable));
 
-            } else if (input.equalsIgnoreCase("fra")) {
+            } else {
 
                 System.out.print("Indsæt hvad du vil oversætte fra morse: ");
                 input = userReader.nextLine();
