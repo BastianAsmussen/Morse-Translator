@@ -81,9 +81,9 @@ public class Morse {
         char[] inputSplit = input.toCharArray();
         StringBuilder output = new StringBuilder();
 
-        for(char c : inputSplit) {
+        for (char c : inputSplit) {
 
-            if(c != ' ') {
+            if (c != ' ') {
 
                 String currentValue = String.valueOf(Character.toUpperCase(c));
                 output.append(morseTable.get(currentValue)).append(" ");
@@ -101,7 +101,7 @@ public class Morse {
         StringBuilder output = new StringBuilder();
         Map<String, String> reversedMorseTable = MapUtils.invertMap(morseTable);
 
-        for(String currentValue : inputSplit) {
+        for (String currentValue : inputSplit) {
 
             output.append(reversedMorseTable.get(currentValue));
         }
